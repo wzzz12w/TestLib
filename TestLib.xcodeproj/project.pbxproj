@@ -8,12 +8,26 @@
 
 /* Begin PBXFileReference section */
 		E422D9B72DAF878700CEF357 /* TestLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E437CEF82DAF8CE500569F01 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E437CEF62DAF8C9400569F01 /* Exceptions for "Sources" folder in "TestLib" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				TestLib/B/BClass.swift,
+			);
+			target = E422D9B62DAF878700CEF357 /* TestLib */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		E422D9B92DAF878700CEF357 /* TestLib */ = {
+		E437CEEE2DAF8C8D00569F01 /* Sources */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TestLib;
+			exceptions = (
+				E437CEF62DAF8C9400569F01 /* Exceptions for "Sources" folder in "TestLib" target */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +46,8 @@
 		E422D9AD2DAF878700CEF357 = {
 			isa = PBXGroup;
 			children = (
-				E422D9B92DAF878700CEF357 /* TestLib */,
+				E437CEF82DAF8CE500569F01 /* Package.swift */,
+				E437CEEE2DAF8C8D00569F01 /* Sources */,
 				E422D9B82DAF878700CEF357 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,9 +85,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				E422D9B92DAF878700CEF357 /* TestLib */,
 			);
 			name = TestLib;
 			packageProductDependencies = (
