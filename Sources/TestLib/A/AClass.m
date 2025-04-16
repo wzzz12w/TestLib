@@ -5,7 +5,7 @@
 //  Created by wayne.zhu on 2025/4/16.
 //
 
-#import "A.h"
+#import "AClass.h"
 
 @implementation AClass
 
