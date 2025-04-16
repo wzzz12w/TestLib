@@ -1,10 +1,3 @@
-//
-//  Package.swift
-//  TestLib
-//
-//  Created by wayne.zhu on 2025/4/16.
-//
-
 // swift-tools-version:5.9
 import PackageDescription
 
