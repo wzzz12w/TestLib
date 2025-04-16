@@ -9,18 +9,19 @@ let package = Package(
     products: [
         .library(
             name: "TestLib",
-            targets: ["TestLib"]
-        ),
+            targets: ["TestLibSwift"]
+        )
     ],
     targets: [
         .target(
-            name: "TestLib",
-            dependencies: [],
-            path: "Sources/TestLib",
-            publicHeadersPath: "include",
-            cSettings: [
-                .headerSearchPath("A")
-            ]
+            name: "TestLibObjC",
+            path: "Sources/TestLibObjC",
+            publicHeadersPath: "include"
+        ),
+        .target(
+            name: "TestLibSwift",
+            dependencies: ["TestLibObjC"],
+            path: "Sources/TestLibSwift"
         )
     ]
 )
